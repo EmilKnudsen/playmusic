@@ -5,6 +5,7 @@
   font-family: 'Poppins', sans-serif;
 }
 h1{
+  margin-left: 25px;
   font-size: 36px;
   background: linear-gradient(to right, #EE0979 0%, #FF6A00 50%);
   -webkit-background-clip: text;

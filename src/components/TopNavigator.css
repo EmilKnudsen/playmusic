@@ -1,0 +1,25 @@
+.topNavigator {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #341931;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+    margin: 0 24px;
+    padding: 20px 0;
+}
+.topNavigator a{
+    text-decoration: none;
+}
+.fas.fa-chevron-left {
+    font-size: 20px;
+    color: #341931;
+}
+.fas.fa-search {
+    font-size: 20px;
+    color: #341931;
+}

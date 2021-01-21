@@ -1,14 +1,8 @@
-.featured {
+.featuredCard {
     margin: 25px;
-}
-.featuredImgbox {
     position: relative;
 }
-.featuredImage{
-    width: 325px;
-    height: 425px;
-}
-.featuredTitle {
+.featuredCard__title {
     position: absolute;
     bottom: 3em;
     left: 10px;
@@ -16,9 +10,19 @@
     color: white;
     font-weight: bold;
 }
-.featuredSoundtrack {
+.featuredCard__image {
+    overflow: hidden;
+    background-color: gray;
+}
+.featuredCard__track {
     position: absolute;
     bottom: 3em;
     left: 10px;
     color: white;
+}
+.featuredCard__scroll {
+    overflow-y: scroll;
+}
+.featuredCard__scroll::-webkit-scrollbar {
+    display: none;
 }
