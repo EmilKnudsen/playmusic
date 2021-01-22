@@ -2,8 +2,7 @@
     height: 65px;
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    margin: 0px 25px;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     bottom: 0;
@@ -22,7 +21,9 @@
     -webkit-text-fill-color: transparent;
 }
 .fas.fa-microphone-alt {
-    color: rgb(58, 39, 82);
+    background: linear-gradient(to right, #EE0979 0%, #FF6A00 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .fas.fa-podcast{
     color: white;
