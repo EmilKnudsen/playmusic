@@ -2,13 +2,15 @@
     margin: 10px 25px 10px;
 }
 .categoriesCard__category{
-    display: flex;
+    padding: 16px;
+    position: relative;
     border-radius: 10px;
     align-items: center;
     width: 100%;
-    background-color: green;
-    padding: 16px;
     margin-bottom: 20px;
+}
+.details {
+    position: absolute;
 }
 .categoriesCard__title {
     font-size: 15px;

@@ -18,8 +18,8 @@ export default function Categories() {
             <CategoriesCard title="Fitness & Workout" />
             <CategoriesCard title="Hip-Hop/Rap" />
             <CategoriesCard title="Industrial" />
-            <Navigator />
             </article>
+            <Navigator />
         </>
     )
 }
