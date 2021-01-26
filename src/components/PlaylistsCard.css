@@ -13,4 +13,7 @@
     display: block;
     text-align: center;
     padding: 10px;
+    border: 2px solid #FF1168;
+    margin: 0 25px;
+    border-radius: 20px;
 }
