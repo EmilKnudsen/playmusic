@@ -3,11 +3,12 @@ import TopNavigator from "../components/TopNavigator";
 import PageHeading from "../components/PageHeading";
 import SongsCard from "../components/SongsCard";
 import PlaylistCard from "../components/PlaylistsCard";
+import bgImage from "./sound-wave.png";
 
 export default function Playlists() {
     return (
         <>
-        <TopNavigator title="PLAYLISTS" />
+        <TopNavigator title="PLAYLISTS" style={{backgroundImage: `url(${bgImage})`}} />
         <PageHeading>Playlists</PageHeading>
         <div className="songsCard">
         <span className="playlistsCard__header"><PlaylistCard top="Top 50" music="Rock Ballads"/></span>

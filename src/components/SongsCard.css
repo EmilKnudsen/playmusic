@@ -13,7 +13,7 @@
     text-decoration: none;
     margin: auto 0;
 }
-.fas.fa-play {
+.songsCard__play .fas.fa-play {
     color: white;
     font-size: 14px;
     background: linear-gradient(to right, #EE0979 0%, #FF6A00 90%);
