@@ -56,6 +56,10 @@ export default function Playlists(props) {
 		<a className="playlists__link" href="/">LISTEN ALL</a> 
         </div>
                 <Navigator />
+
+		
+
+
 		</>
 	)
 }
