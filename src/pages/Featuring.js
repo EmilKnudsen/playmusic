@@ -1,9 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import TokenContext from "../TokenContext";
-import Navigator from "../components/Navigator";
-import TopNavigator from "../components/TopNavigator";
-import PageHeading from "../components/PageHeading";
 import FeaturedCard from "../components/FeaturedCard";
 
 export default function Featured() {
@@ -19,25 +16,24 @@ export default function Featured() {
 		.then(response =>  {
 			setContent(response.data)
 
+			console.log(content)
+
+
+
+
 		} );
 	}, [token, setContent]);
 
 	return (
 		<>
-                <TopNavigator title="FEATURED" /> 
-                <PageHeading>Featured</PageHeading>
+			<h1>Featured</h1>
 			{
 				content.playlists?.items.map(function (item){
 					return (
-                        <>
-                        <div className="featuredCard__scroll">
 						<FeaturedCard image={item.images[0].url} title={item.name} track={item.type} />
-                        </div>
-                        </>
 					)
 				})
 			}
-                <Navigator />
 		</>
 	)
 }

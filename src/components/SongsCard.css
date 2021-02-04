@@ -1,5 +1,6 @@
 .songsCard {
     margin: 0 25px;
+    overflow-x: scroll;
 }
 .songsCard__songs {
     display: grid;
