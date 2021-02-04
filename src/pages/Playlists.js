@@ -1,26 +1,61 @@
+import axios from "axios";
+import { useContext, useEffect, useState } from "react";
+import TokenContext from "../TokenContext";
 import Navigator from "../components/Navigator";
 import TopNavigator from "../components/TopNavigator";
 import PageHeading from "../components/PageHeading";
 import SongsCard from "../components/SongsCard";
 import PlaylistCard from "../components/PlaylistsCard";
 import bgImage from "./sound-wave.png";
+import { Link, navigate } from "@reach/router";
 
-export default function Playlists() {
-    return (
+
+export default function Playlists(props) {
+	var [token] = useContext(TokenContext);
+	var [content, setContent] = useState([]);
+	var [songs, setSongs] = useState({})
+	var [playlists, setPlaylists] = useState([]);
+	var [currentPlaylist, setCurrentPlaylist] = useState("");
+
+	useEffect(function() {
+		axios.get("https://api.spotify.com/v1/me/playlists", {
+			headers: {
+				"Authorization": "Bearer " + token.access_token
+			}
+		})
+		.then(response =>  setPlaylists(response.data.items))
+	}, [token, setContent]);
+
+	useEffect(function() {
+		if (props.id)
+		axios.get("https://api.spotify.com/v1/playlists/" + props.id + "/tracks", {
+			headers:  {
+				"Authorization": "Bearer " + token.access_token
+			}
+		})
+		.then(response => setSongs(response.data));
+
+	}, [token, props.id, setSongs])
+
+
+	return (
         <>
         <TopNavigator title="PLAYLISTS" style={{backgroundImage: `url(${bgImage})`}} />
         <PageHeading>Playlists</PageHeading>
-        <div className="songsCard">
-        <span className="playlistsCard__header"><PlaylistCard top="Top 50" music="Rock Ballads"/></span>
-        <SongsCard header="Old Town Road" text="Billy Ray Cyrus" time="3 : 56"/>
-        <SongsCard header="Don’t Call Me Up" text="Mabel" time="2 : 46"/>
-        <SongsCard header="Let Me Down Slowly" text="Alec Benjamin" time="2 : 46"/>
-        <SongsCard header="Here With Me" text="Marshmello" time="3 : 37"/>
-        <SongsCard header="Paradise" text="Bazzi" time="3 : 12"/>
-        <SongsCard header="Let Me Down Slowly" text="Alec Benjamin" time="4 : 12"/>
+		<div className="playlistCard__images">
+			{playlists.map(list=>(	
+			<Link key={list.id} to={`/playlists/${list.id}`} onClick={() => setCurrentPlaylist(list.name)}><img className="playlistCard__image" src={list.images[0].url} alt=""/> </Link>
+			))}
+			{/* {player.map(list=>(	
+			<Link key={list.id} to={`/player/${list.id}`} onClick={() => setCurrentPlaylist(list.name)}><img className="playlistCard__image" src={list.images[0].url} alt=""/> </Link>
+			))} */}
+		</div>
+		<span className="playlistsCard__header">{currentPlaylist}</span>
+		<div className="songsCard">
+		{songs.items?.map(({track})=><SongsCard key={track.id} text={track.artists[0].name} header={track.name} time={track.duration_ms}/>)}
+		<a className="playlists__link" href="/">LISTEN ALL</a> 
         </div>
-        <a className="playlists__link" href="/">LISTEN ALL</a> 
-        <Navigator />
-        </>
-    )
+                <Navigator />
+		</>
+	)
 }

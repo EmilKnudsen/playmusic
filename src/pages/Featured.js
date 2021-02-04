@@ -19,11 +19,6 @@ export default function Featured() {
 		.then(response =>  {
 			setContent(response.data)
 
-			console.log(content)
-
-
-
-
 		} );
 	}, [token, setContent]);
 

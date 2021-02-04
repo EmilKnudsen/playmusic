@@ -1,13 +1,14 @@
+import { Link } from "@reach/router";
 import "./Navigator.css";
 
 export default function Navigator() {
     return (
         <div className="navigator">
-            <a className="navWifi" href="/"><i className="fas fa-wifi"></i></a>
-            <a className="navMic" href="/"><i className="fas fa-microphone-alt"></i></a>
-            <a className="navPod" href="/"><i className="fas fa-podcast"></i></a>
-            <a className="navAdjust" href="/"><i className="fas fa-adjust"></i></a>
-            <a className="navCpg" href="/"><i className="fas fa-cog"></i></a>
+            <Link className="navWifi" to="/"><i className="fas fa-wifi"></i></Link>
+            <Link className="navMic" to="/playlists"><i className="fas fa-microphone-alt"></i></Link>
+            <Link className="navPod" to="/"><i className="fas fa-podcast"></i></Link>
+            <Link className="navAdjust" to="/"><i className="fas fa-adjust"></i></Link>
+            <Link className="navCpg" to="/"><i className="fas fa-cog"></i></Link>
         </div>
     )
 }
