@@ -52,11 +52,7 @@ export default function Playlists(props) {
 		{songs.items?.map(({track})=><SongsCard key={track.id} text={track.artists[0].name} header={track.name} time={track.duration_ms}/>)}
 		<a className="playlists__link" href="/">LISTEN ALL</a> 
         </div>
-                <Navigator />
-
-		
-
-
+        <Navigator />
 		</>
 	)
 }

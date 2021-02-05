@@ -11,8 +11,21 @@ export default function Login() {
     });
     return (
         <>
-            <a href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in with spotify</a>
-            <LoginCard header="tetetTESTESTETESTETESTETESTeLogin"/>
+            <LoginCard header="Login"/>
+        
+            <div className="loginCard__user">
+            <form>
+                <label>Username</label>
+                <input type="text" id="user" placeholder="Enter your username"/>
+                
+                <label>Password</label>
+                <input type="text" id="user" placeholder="Enter your password"/>
+            </form>
+            </div>
+            <a className="loginCard__login" href={`https://accounts.spotify.com/authorize?${queryParameters}`}>LOG IN</a>
+            <a className="loginCard__spotify" href={`https://accounts.spotify.com/authorize?${queryParameters}`}><i class="fab fa-spotify"></i></a>
+            <p className="loginCard__spotifyText">Spotify Login</p>
+
         </>
     )
 }
