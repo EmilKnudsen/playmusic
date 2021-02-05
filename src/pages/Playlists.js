@@ -46,9 +46,6 @@ export default function Playlists(props) {
 			{playlists.map(list=>(	
 			<Link key={list.id} to={`/playlists/${list.id}`} onClick={() => setCurrentPlaylist(list.name)}><img className="playlistCard__image" src={list.images[0].url} alt=""/> </Link>
 			))}
-			{/* {player.map(list=>(	
-			<Link key={list.id} to={`/player/${list.id}`} onClick={() => setCurrentPlaylist(list.name)}><img className="playlistCard__image" src={list.images[0].url} alt=""/> </Link>
-			))} */}
 		</div>
 		<span className="playlistsCard__header">{currentPlaylist}</span>
 		<div className="songsCard">
