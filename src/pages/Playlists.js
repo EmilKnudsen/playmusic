@@ -49,7 +49,7 @@ export default function Playlists(props) {
 		</div>
 		<span className="playlistsCard__header">{currentPlaylist}</span>
 		<div className="songsCard">
-		{songs.items?.map(({track})=><SongsCard key={track.id} text={track.artists[0].name} header={track.name} time={track.duration_ms}/>)}
+		{songs.items?.map(({track})=><SongsCard key={track.id} text={track.artists[0].name} header={track.name} time={track.duration_ms} id={track.id}/>)}
 		<a className="playlists__link" href="/">LISTEN ALL</a> 
         </div>
         <Navigator />

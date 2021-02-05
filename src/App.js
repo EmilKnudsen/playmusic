@@ -28,6 +28,7 @@ function App() {
               <Playlists path="/playlists" />
               <Playlists path="/playlists/:id" />
               <Player path="/player" />
+              <Player path="/player/:id" />
               <Songs path="/songs" />
               <Album path="/album" />
               <Featuring path="/featuring" />
