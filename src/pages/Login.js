@@ -1,4 +1,5 @@
 import querystring from "querystring";
+import LoginCard from "../components/LoginCard";
 
 export default function Login() {
     var queryParameters = querystring.stringify({
@@ -10,8 +11,8 @@ export default function Login() {
     });
     return (
         <>
-            <h1>Login</h1>
             <a href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in with spotify</a>
+            <LoginCard header="tetetTESTESTETESTETESTETESTeLogin"/>
         </>
     )
 }
