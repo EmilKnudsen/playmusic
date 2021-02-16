@@ -1,13 +1,13 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
-h1{
-  margin-left: 25px;
-  font-size: 36px;
-  background: linear-gradient(to right, #EE0979 0%, #FF6A00 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+h1 {
+	margin-left: 25px;
+	font-size: 36px;
+	background: linear-gradient(to right, #ee0979 0%, #ff6a00 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

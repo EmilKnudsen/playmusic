@@ -10,34 +10,33 @@ export default function Featured() {
 	var [token] = useContext(TokenContext);
 	var [content, setContent] = useState({});
 
-	useEffect(function() {
-		axios.get("https://api.spotify.com/v1/browse/featured-playlists", {
-			headers: {
-				"Authorization": "Bearer " + token.access_token
-			}
-		})
-		.then(response =>  {
-			setContent(response.data)
-
-		} );
-	}, [token, setContent]);
+	useEffect(
+		function () {
+			axios
+				.get("https://api.spotify.com/v1/browse/featured-playlists", {
+					headers: {
+						Authorization: "Bearer " + token.access_token,
+					},
+				})
+				.then((response) => {
+					setContent(response.data);
+				});
+		},
+		[token, setContent]
+	);
 
 	return (
 		<>
-                <TopNavigator title="FEATURED" /> 
-                <PageHeading>Featured</PageHeading>
-			{
-				content.playlists?.items.map(function (item){
-					return (
-                        <>
-                        <div className="featuredCard__scroll">
+			<TopNavigator title="FEATURED" />
+			<PageHeading>Featured</PageHeading>
+			{content.playlists?.items.map(function (item) {
+				return (
+					<div key={item.name} className="featuredCard__scroll">
 						<FeaturedCard image={item.images[0].url} title={item.name} track={item.type} />
-                        </div>
-                        </>
-					)
-				})
-			}
-                <Navigator />
+					</div>
+				);
+			})}
+			<Navigator />
 		</>
-	)
+	);
 }

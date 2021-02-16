@@ -1,52 +1,52 @@
 .categoriesCard {
-    margin: 10px 25px 10px;
+	margin: 10px 25px 10px;
 }
-.categoriesCard__category{
-    padding: 16px;
-    position: relative;
-    border-radius: 10px;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
+.categoriesCard__category {
+	padding: 16px;
+	position: relative;
+	border-radius: 10px;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
 }
 .details {
-    position: absolute;
+	position: absolute;
 }
 .categoriesCard__title {
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    width: 86%;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	width: 86%;
 }
-.categoriesCard__show{
-    color: white;
-    text-decoration: none;
-    float: right;
+.categoriesCard__show {
+	color: white;
+	text-decoration: none;
+	float: right;
 }
-details:nth-of-type(1){
-    background-color: #D70060;
+details:nth-of-type(1) {
+	background-color: #d70060;
 }
-.categoriesCard__category:nth-of-type(2){
-    background-color: #E54028;
+.categoriesCard__category:nth-of-type(2) {
+	background-color: #e54028;
 }
-.categoriesCard__category:nth-of-type(3){
-    background-color: #F18D05;
+.categoriesCard__category:nth-of-type(3) {
+	background-color: #f18d05;
 }
-.categoriesCard__category:nth-of-type(4){
-    background-color: #F2BC06;
+.categoriesCard__category:nth-of-type(4) {
+	background-color: #f2bc06;
 }
-.categoriesCard__category:nth-of-type(5){
-    background-color: #5EB11C;
+.categoriesCard__category:nth-of-type(5) {
+	background-color: #5eb11c;
 }
-.categoriesCard__category:nth-of-type(6){
-    background-color: #3A7634;
+.categoriesCard__category:nth-of-type(6) {
+	background-color: #3a7634;
 }
-.categoriesCard__category:nth-of-type(7){
-    background-color: #0ABEBE;
+.categoriesCard__category:nth-of-type(7) {
+	background-color: #0abebe;
 }
-.categoriesCard__category:nth-of-type(8){
-    background-color: #00A1CB;
+.categoriesCard__category:nth-of-type(8) {
+	background-color: #00a1cb;
 }
-.categoriesCard__category:nth-of-type(9){
-    background-color: #115793;
+.categoriesCard__category:nth-of-type(9) {
+	background-color: #115793;
 }

@@ -1,37 +1,37 @@
 .songsCard {
-    margin: 0 25px;
-    overflow-x: scroll;
+	margin: 0 25px;
+	overflow-x: scroll;
 }
 .songsCard__songs {
-    display: grid;
-    grid-template-columns: 15% 75% auto;
-    margin: 10px 0px 30px 0px;
+	display: grid;
+	grid-template-columns: 15% 75% auto;
+	margin: 10px 0px 30px 0px;
 }
-.songsCard__play{
-    text-align: center;
-    color: white;
-    display: block;
-    text-decoration: none;
-    margin: auto 0;
+.songsCard__play {
+	text-align: center;
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin: auto 0;
 }
 .songsCard__play .fas.fa-play {
-    color: white;
-    font-size: 14px;
-    background: linear-gradient(to right, #EE0979 0%, #FF6A00 90%);
-    border-radius: 50%;
-    display: block;
-    width: 35px;
-    height: 35px;
-    padding: 10.5px 0 0 1.5px;
+	color: white;
+	font-size: 14px;
+	background: linear-gradient(to right, #ee0979 0%, #ff6a00 90%);
+	border-radius: 50%;
+	display: block;
+	width: 35px;
+	height: 35px;
+	padding: 10.5px 0 0 1.5px;
 }
 .songsCard__header {
-    font-weight: bold;
-    font-size: 15px;
+	font-weight: bold;
+	font-size: 15px;
 }
 .songsCard__text {
-    font-size: 12px;
+	font-size: 12px;
 }
 .songsCard__time {
-    font-size: 12px;
-    margin: auto 0;
+	font-size: 12px;
+	margin: auto 0;
 }

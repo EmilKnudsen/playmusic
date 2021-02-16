@@ -1,63 +1,60 @@
 .playerCard {
-    margin: 0 25px;
+	margin: 0 25px;
 }
 .playerCard__image {
-    width: 325px;
-    height: auto;
-    display: block;
-    margin: 50px auto;
+	width: 325px;
+	height: auto;
+	display: block;
+	margin: 50px auto;
 }
 .playerCard__song {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white;
-
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: white;
 }
 .playerCard__artist {
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 30px;
-    color: white;
-
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 30px;
+	color: white;
 }
 .playerCard__time {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 25px;
-    color: white;
-
+	display: flex;
+	justify-content: space-between;
+	margin: 0 25px;
+	color: white;
 }
 .playerNav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 50px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 50px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .pnavPlay .fas.fa-play {
-    font-size: 50px;
-    background: linear-gradient(to right, #EE0979 0%, #FF6A00 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
+	font-size: 50px;
+	background: linear-gradient(to right, #ee0979 0%, #ff6a00 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .playerCard__line {
-    margin: 0 25px;
-    border: 1px solid #FF1168;
-    background-color: #FF1168;
-    margin-bottom: 10px;
+	margin: 0 25px;
+	border: 1px solid #ff1168;
+	background-color: #ff1168;
+	margin-bottom: 10px;
 }
-.playerCard__bg{
-    position: absolute;
-    z-index: -1;
-    width: 375px;
-    top: 0;
-    left: 0;
+.playerCard__bg {
+	position: absolute;
+	z-index: -1;
+	width: 375px;
+	top: 0;
+	left: 0;
 }
-.pnav  {
-    color: white;
+.pnav {
+	color: white;
 }
