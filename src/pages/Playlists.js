@@ -5,13 +5,13 @@ import Navigator from "../components/Navigator";
 import TopNavigator from "../components/TopNavigator";
 import PageHeading from "../components/PageHeading";
 import SongsCard from "../components/SongsCard";
-import PlaylistCard from "../components/PlaylistsCard";
 import bgImage from "./sound-wave.png";
-import { Link, navigate } from "@reach/router";
+import { Link } from "@reach/router";
 
 export default function Playlists(props) {
 	var [token] = useContext(TokenContext);
-	var [content, setContent] = useState([]);
+	var contentState = useState([]);
+	var setContent = contentState[1];
 	var [songs, setSongs] = useState({});
 	var [playlists, setPlaylists] = useState([]);
 	var [currentPlaylist, setCurrentPlaylist] = useState("");
